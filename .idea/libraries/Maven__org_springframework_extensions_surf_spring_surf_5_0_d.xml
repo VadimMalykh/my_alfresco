@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.extensions.surf:spring-surf:5.0.d">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/extensions/surf/spring-surf/5.0.d/spring-surf-5.0.d.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/extensions/surf/spring-surf/5.0.d/spring-surf-5.0.d-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/extensions/surf/spring-surf/5.0.d/spring-surf-5.0.d-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

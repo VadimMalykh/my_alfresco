@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/my_alfresco.iml" filepath="$PROJECT_DIR$/my_alfresco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repo/repo.iml" filepath="$PROJECT_DIR$/repo/repo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repo-amp/repo-amp.iml" filepath="$PROJECT_DIR$/repo-amp/repo-amp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runner/runner.iml" filepath="$PROJECT_DIR$/runner/runner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/share/share.iml" filepath="$PROJECT_DIR$/share/share.iml" />
+      <module fileurl="file://$PROJECT_DIR$/share-amp/share-amp.iml" filepath="$PROJECT_DIR$/share-amp/share-amp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/solr-config/solr-config.iml" filepath="$PROJECT_DIR$/solr-config/solr-config.iml" />
+    </modules>
+  </component>
+</project>
