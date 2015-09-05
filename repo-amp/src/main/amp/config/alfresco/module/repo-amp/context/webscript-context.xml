@@ -21,4 +21,8 @@
 		  class="com.vmalykh.demoamp.HelloWorldWebScript"
 		  parent="webscript">
 	</bean>
+	<bean id="webscript.com.vmalykh.my_alfresco.folders.get"
+		  class="com.vmalykh.demoamp.FoldersWebScript"
+		  parent="webscript">
+	</bean>
 </beans>

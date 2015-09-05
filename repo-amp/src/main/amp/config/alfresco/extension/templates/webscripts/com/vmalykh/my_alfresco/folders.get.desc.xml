@@ -1,0 +1,7 @@
+<webscript>
+    <shortname>Sample Webscript to get all folders from repo</shortname>
+    <description>Returns list of all folders in repo</description>
+    <url>/vmalykh/folders</url>
+    <authentication>user</authentication>
+    <format default="html"></format>
+</webscript>
