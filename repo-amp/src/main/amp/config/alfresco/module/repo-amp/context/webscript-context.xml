@@ -22,7 +22,7 @@
 		  parent="webscript">
 	</bean>
 	<bean id="webscript.com.vmalykh.my_alfresco.folders.get"
-		  class="com.vmalykh.demoamp.FoldersWebScript"
+		  class="com.vmalykh.my_alfresco.FoldersWebScript"
 		  parent="webscript">
 	</bean>
 </beans>

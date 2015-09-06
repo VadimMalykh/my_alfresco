@@ -2,4 +2,6 @@
 <body>
 Hello User!<br/>
 We found these folders:<br/>
-${folder.name}
+<#list folders as folder>
+${folder}<br/>
+</#list>
