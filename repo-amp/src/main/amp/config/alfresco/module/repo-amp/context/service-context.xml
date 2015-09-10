@@ -20,7 +20,12 @@
     
     <!-- A simple class that is initialized by Spring -->
     <bean id="com.vmalykh.exampleBean" class="com.vmalykh.demoamp.Demo" init-method="init" />
-    
+
+    <bean id="com.vmalykh.my_alfresco.folders" class="com.vmalykh.my_alfresco.Folders">
+        <property name="repository" ref="repositoryHelper"/>
+    </bean>
+
+
     <!-- A simple module component that will be executed once -->
     <bean id="com.vmalykh.exampleComponent" class="com.vmalykh.demoamp.DemoComponent" parent="module.baseComponent" >
         <property name="moduleId" value="${project.artifactId}" />  <!-- See module.properties -->

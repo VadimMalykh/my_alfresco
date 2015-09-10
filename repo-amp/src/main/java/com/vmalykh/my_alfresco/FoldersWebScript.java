@@ -12,19 +12,14 @@ import java.util.Map;
  * Created by vadim on 05.09.15.
  */
 public class FoldersWebScript extends DeclarativeWebScript{
-    private Repository repository;
-    public void setRepository(Repository repository)
-    {
-        this.repository = repository;
-    }
+
     protected Map<String, Object> executeImpl(
             WebScriptRequest req, Status status, Cache cache) {
-//        Folders folders = new Folders();
+
+        Folders folders = new Folders();
+
         Map<String, Object> model = new HashMap<String, Object>();
-//        model.put("folders", folders.getFolders());
-//        NodeRef rootFolder = repository.getCompanyHome();
-        model.put("folder", "rootFolder");
-        model.put("folders", new ArrayList<String>());
+        model.put("folders", folders.getFolders());
 
         return model;
     }
