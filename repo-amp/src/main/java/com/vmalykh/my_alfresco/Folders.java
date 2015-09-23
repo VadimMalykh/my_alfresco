@@ -24,13 +24,13 @@ public class Folders {
     {
         List<Folder> folders = new ArrayList<>();
 
-        NodeRef rootFolder = repository.getCompanyHome();
+        // NodeRef rootFolder = repository.getCompanyHome();
 
 
         folders.add(new Folder("SuperPuperFolder"));
         folders.add(new Folder("Another superPuperFolder"));
         folders.add(new Folder("Yet another superPuperFolder"));
-        folders.add(new Folder(rootFolder.toString()));
+        // folders.add(new Folder(rootFolder.toString()));
 
         return folders;
     }
