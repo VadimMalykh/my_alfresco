@@ -25,7 +25,6 @@
         <property name="repository" ref="repositoryHelper"/>
     </bean>
 
-
     <!-- A simple module component that will be executed once -->
     <bean id="com.vmalykh.exampleComponent" class="com.vmalykh.demoamp.DemoComponent" parent="module.baseComponent" >
         <property name="moduleId" value="${project.artifactId}" />  <!-- See module.properties -->

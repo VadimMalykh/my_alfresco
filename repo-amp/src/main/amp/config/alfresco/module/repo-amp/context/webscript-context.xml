@@ -24,5 +24,6 @@
 	<bean id="webscript.com.vmalykh.my_alfresco.folders.get"
 		  class="com.vmalykh.my_alfresco.FoldersWebScript"
 		  parent="webscript">
+		<property name="folders" ref="com.vmalykh.my_alfresco.folders"/>
 	</bean>
 </beans>

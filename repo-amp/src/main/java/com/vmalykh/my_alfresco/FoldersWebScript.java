@@ -13,10 +13,15 @@ import java.util.Map;
  */
 public class FoldersWebScript extends DeclarativeWebScript{
 
+    private Folders folders;
+    public void setFolders(Folders folders)
+    {
+        this.folders = folders;
+        System.out.println("Folders injected!");
+    }
+
     protected Map<String, Object> executeImpl(
             WebScriptRequest req, Status status, Cache cache) {
-
-        Folders folders = new Folders();
 
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("folders", folders.getFolders());
