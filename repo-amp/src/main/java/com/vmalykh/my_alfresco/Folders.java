@@ -16,22 +16,19 @@ public class Folders {
     private Repository repository;
     public void setRepository(Repository repository)
     {
-        System.out.println("Repository injected: " + repository);
         this.repository = repository;
+        System.out.println("Repository injected: " + repository);
     }
 
     public List<Folder> getFolders()
     {
         List<Folder> folders = new ArrayList<>();
 
-        NodeRef rootFolder = repository.getCompanyHome();
+        NodeRef rootFolder = repository.getRootHome();
 
         // for (rootFolder.children)
 
 
-        folders.add(new Folder("SuperPuperFolder"));
-        folders.add(new Folder("Another superPuperFolder"));
-        folders.add(new Folder("Yet another superPuperFolder"));
         folders.add(new Folder(rootFolder.toString()));
 
         return folders;
