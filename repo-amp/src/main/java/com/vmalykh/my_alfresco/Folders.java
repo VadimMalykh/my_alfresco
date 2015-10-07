@@ -30,6 +30,7 @@ public class Folders {
 
 
         folders.add(new Folder(rootFolder.toString()));
+        folders.add(new Folder("fofolder"));
 
         return folders;
     }
