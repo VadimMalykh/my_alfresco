@@ -44,5 +44,9 @@
             <title>Abstract class for OrgUnit</title>
             <parent>cm:content</parent>
         </type>
+        <type name="vm:company">
+            <title>Company (organization)</title>
+            <parent>vm:orgunit</parent>
+        </type>
     </types>
 </model>
