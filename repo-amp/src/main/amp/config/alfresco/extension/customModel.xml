@@ -22,30 +22,31 @@
     <!-- Introduction of new namespaces defined by this model -->
     <!-- NOTE: The following namespace my.new.model should be changed to reflect your own namespace -->
     <namespaces>
-        <namespace uri="http://www.mycompany.com/model/content/1.0" prefix="my"/>
         <namespace uri="http://www.vmalykh.com/model/content/1.0" prefix="vm" />
     </namespaces>
 
     <types>
-        <!--  Enterprise-wide generic document type -->
-        <type name="my:doc">
-            <title>MyCompany Generic Document</title>
-            <parent>cm:content</parent>
-        </type>
-        <type name="my:marketingDoc">
-            <title>MyCompany Marketing Document</title>
-            <parent>my:doc</parent>
-        </type>
-        <type name="my:whitepaper">
-            <title>MyCompany Whitepaper</title>
-            <parent>my:marketingDoc</parent>
-        </type>
         <type name="vm:orgunit">
             <title>Abstract class for OrgUnit</title>
             <parent>cm:content</parent>
+            <properties>
+                <property name="vm:parent">
+                    <type>vm:orgunit</type>
+                    <mandatory>false</mandatory>
+                    <multiple>false</multiple>
+                </property>
+            </properties>
         </type>
         <type name="vm:company">
             <title>Company (organization)</title>
+            <parent>vm:orgunit</parent>
+        </type>
+        <type name="vm:department">
+            <title>Department</title>
+            <parent>vm:orgunit</parent>
+        </type>
+        <type name="vm:employee">
+            <title>Employee unit</title>
             <parent>vm:orgunit</parent>
         </type>
     </types>
