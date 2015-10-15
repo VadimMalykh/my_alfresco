@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/my_alfresco.iml" filepath="$PROJECT_DIR$/my_alfresco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orgunit/orgunit.iml" filepath="$PROJECT_DIR$/orgunit/orgunit.iml" />
       <module fileurl="file://$PROJECT_DIR$/repo/repo.iml" filepath="$PROJECT_DIR$/repo/repo.iml" />
       <module fileurl="file://$PROJECT_DIR$/repo-amp/repo-amp.iml" filepath="$PROJECT_DIR$/repo-amp/repo-amp.iml" />
       <module fileurl="file://$PROJECT_DIR$/runner/runner.iml" filepath="$PROJECT_DIR$/runner/runner.iml" />

@@ -93,5 +93,6 @@
     <module>solr-config</module>
     <module>share</module>
     <module>runner</module>
+      <module>orgunit</module>
   </modules>
 </project>

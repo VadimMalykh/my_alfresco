@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="orgunit" />
         <module name="repo" />
         <module name="repo-amp" />
         <module name="share" />
@@ -30,6 +31,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="my_alfresco" target="1.8" />
+      <module name="orgunit" target="1.8" />
       <module name="repo" target="1.8" />
       <module name="repo-amp" target="1.8" />
       <module name="runner" target="1.8" />
