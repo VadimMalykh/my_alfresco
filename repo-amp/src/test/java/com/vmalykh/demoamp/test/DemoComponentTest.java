@@ -9,6 +9,7 @@ import org.alfresco.repo.security.authentication.AuthenticationUtil;
 import org.alfresco.service.cmr.repository.NodeRef;
 import org.alfresco.service.cmr.repository.NodeService;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,7 @@ import com.tradeshift.test.remote.RemoteTestRunner;
  * @author Maurizio Pillitu
  *
  */
+@Ignore
 @RunWith(RemoteTestRunner.class)
 @Remote(runnerClass=SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:alfresco/application-context.xml")
@@ -55,12 +57,12 @@ public class DemoComponentTest {
     @Qualifier("NodeService")
     protected NodeService nodeService;
     
-    @Test
+//    @Test
     public void testWiring() {
         assertNotNull(demoComponent);
     }
     
-    @Test
+//    @Test
     public void testGetCompanyHome() {
     	AuthenticationUtil.setFullyAuthenticatedUser(ADMIN_USER_NAME);
         NodeRef companyHome = demoComponent.getCompanyHome();
@@ -70,7 +72,7 @@ public class DemoComponentTest {
         assertEquals("Company Home", companyHomeName);
     }
     
-    @Test
+//    @Test
     public void testChildNodesCount() {
     	AuthenticationUtil.setFullyAuthenticatedUser(ADMIN_USER_NAME);
         NodeRef companyHome = demoComponent.getCompanyHome();

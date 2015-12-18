@@ -29,13 +29,21 @@
         <type name="vm:orgunit">
             <title>Abstract class for OrgUnit</title>
             <parent>cm:content</parent>
-            <properties>
-                <property name="vm:parent">
-                    <type>vm:orgunit</type>
-                    <mandatory>false</mandatory>
-                    <multiple>false</multiple>
-                </property>
-            </properties>
+            <!--<properties>-->
+                <!--<property name="vm:parent">-->
+                    <!--<type>vm:orgunit</type>-->
+                    <!--<mandatory>false</mandatory>-->
+                    <!--<multiple>false</multiple>-->
+                <!--</property>-->
+            <!--</properties>-->
+            <associations>
+                <association name="vm:parentOrgUnit">
+                    <target>
+                        <class>vm:orgunit</class>
+                        <many>false</many>
+                    </target>
+                </association>
+            </associations>
         </type>
         <type name="vm:company">
             <title>Company (organization)</title>
