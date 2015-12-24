@@ -10,6 +10,14 @@
           <option name="goal" value="org.alfresco.maven.plugin:alfresco-maven-plugin:2.1.0:refresh-repo" />
           <option name="projectPath" value="$PROJECT_DIR$/repo-amp/pom.xml" />
         </MavenCompilerTask>
+        <MavenCompilerTask>
+          <option name="goal" value="org.alfresco.maven.plugin:alfresco-maven-plugin:2.1.1:refresh-repo" />
+          <option name="projectPath" value="$PROJECT_DIR$/repo-amp/pom.xml" />
+        </MavenCompilerTask>
+        <MavenCompilerTask>
+          <option name="goal" value="org.alfresco.maven.plugin:alfresco-maven-plugin:2.1.1:refresh-share" />
+          <option name="projectPath" value="$PROJECT_DIR$/share-amp/pom.xml" />
+        </MavenCompilerTask>
       </set>
     </option>
   </component>
